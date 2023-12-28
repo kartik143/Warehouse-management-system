@@ -7,7 +7,7 @@ function RemoveItem({ onRemoveItem }) {
   const handleRemoveItem = () => {
     console.log("Removing item:", itemName);
 
-    fetch(`http://localhost:8080/api/warehouse/remove/${itemName}`, {
+    fetch(`${process.env.REACT_APP_API_BASE_URL}/api/warehouse/remove/${itemName}`, {
       method: 'DELETE',
     })
       .then((response) => response.json())

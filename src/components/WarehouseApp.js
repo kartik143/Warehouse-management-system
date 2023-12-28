@@ -24,7 +24,7 @@ function WarehouseApp() {
 
   // Function to fetch items from the backend and update the state
   const fetchItemsFromBackend = () => {
-    fetch('http://localhost:8080/api/warehouse/items')
+    fetch(`${process.env.REACT_APP_API_BASE_URL}/api/warehouse/items`)
       .then((response) => response.json())
       .then((data) => {
         setItems(data);

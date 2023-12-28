@@ -8,7 +8,7 @@ function AddItem({ onAddItem }) {
   const handleAddItem = () => {
     console.log("Adding item:", { itemName, quantity });
 
-    fetch('http://localhost:8080/api/warehouse/add', {
+    fetch(`${process.env.REACT_APP_API_BASE_URL}/api/warehouse/add`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
