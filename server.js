@@ -5,7 +5,7 @@ const app = express();
 
 // Proxy setup for API requests
 app.use('/api', createProxyMiddleware({ 
-  target: 'http://wms-backend-dev4.us-west-1.elasticbeanstalk.com', 
+  target: process.env.REACT_APP_API_BASE_URL, 
   changeOrigin: true,
 }));
 
