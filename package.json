@@ -39,7 +39,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://wms-backend-dev4.us-west-1.elasticbeanstalk.com",
+  "proxy": "http://il-wms-backend-env.us-west-1.elasticbeanstalk.com",
   "engines": {
     "node": "14.18.0",
     "npm": "6.14.15"
